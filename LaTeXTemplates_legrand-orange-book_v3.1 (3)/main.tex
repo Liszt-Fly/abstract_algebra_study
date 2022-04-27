@@ -8,6 +8,7 @@
 \usepackage{xeCJK}
 \usepackage{fontspec}
 \usepackage{ctex}
+\usepackage{color}
 \setmainfont[]{PingFang HK}
 \setCJKmainfont{Heiti SC}
 % Book information for PDF metadata, remove/comment this block if not required
@@ -184,17 +185,75 @@
 \begin{example}
 	设A=D都表示正整数的集合,$\emptyset_1: A\rightarrow D$ 定义为:$\emptyset_1(a)=1,\emptyset_2: A\rightarrow $定义为:$\emptyset_2(a)=a^0$，则$\emptyset_1=\emptyset_2$
 
-    由于前提条件是正整数的集合，而不是自然数，元素自然不可能是0，所以定义域一样，而作用效果也一样，映射的结果都是1，所以映射是相等的，但是如果将本例改为自然数，则是错误的。
+	由于前提条件是正整数的集合，而不是自然数，元素自然不可能是0，所以定义域一样，而作用效果也一样，映射的结果都是1，所以映射是相等的，但是如果将本例改为自然数，则是错误的。
 \end{example}
-\section*{Unnumbered Section}
+\section{algebraic operation}
+\subsection{Basic Algebraic Operation}
+本节的目标任务就是重新定义代数运算，打破之前对代数运算的认知，从映射与集合的观点来重新定义。
 
-\subsection*{Unnumbered Subsection}
+\begin{theorem}
+	一个从$A\times B$到D的映射叫做一个$A\times B$到D的代数运算。
+\end{theorem}
 
-\subsubsection*{Unnumbered Subsubsection}
 
-%----------------------------------------------------------------------------------------
-%	IN-TEXT ELEMENT EXAMPLES CHAPTER
-%----------------------------------------------------------------------------------------
+映射运算$\emptyset$:$A\times B\rightarrow D,(a,b)\rightarrow d=\emptyset(a,b)$ \par
+代数运算$\circ$: $A\times B \rightarrow D,(a,b)\rightarrow d=a \circ b$
+
+\begin{example}
+	设$A=\mathbb{Z},B=\mathbb{Z}-\{0\},D=\mathbb{Q}$,则
+	\begin{center}
+		$\circ:(a,b)\rightarrow \frac{a}{b}=a\circ b$
+	\end{center}
+	是一个$A\times B$到D的代数运算，也就是普通的除法。
+
+	\textcolor{Salmon}{对于被除数是整数，除数是不为0的整数来说，除法的运算结果既有可能是分数，也有可能是不为0的整数，所以综合来看映射自然是有理数集。}
+
+\end{example}
+
+\begin{example}
+	设A=\{1,2\},B=\{1,2\},D=\{奇，偶\},则
+	\begin{center}
+		$\circ:(1,1)\rightarrow$奇,
+		$(1,2)\rightarrow$奇,
+		$(2,1)\rightarrow$偶，
+		$(2,2)\rightarrow$偶
+	\end{center}
+	是一个$A\times B$到D的代数运算。
+
+	\textcolor{Salmon}{对于$A\times$B 笛卡尔积的每一个有序数组都规定了映射的结果，并且结果都在D集合中存在，所以自然符合代数运算的含义。}
+\end{example}
+
+\begin{theorem}
+	我们称$A\times A$的代数运算$\circ$为A上的代数运算，或者A上的二元运算。$\circ$具有封闭性。
+\end{theorem}
+
+\begin{example}
+	设$A=\mathbb{Z}$,则普通数的加法，减法，乘法，都是集合A上的代数运算。
+
+	\textcolor{Salmon}{结论当然是成立的，任意一个整数+整数，整数-整数，整数*整数，结果都是整数。}
+\end{example}
+
+\subsection{operational rule}
+
+\begin{theorem}
+	设$circ$是集合A上的一个代数运算。
+	\begin{itemize}
+		\item 如果对于$\forall a,b,c\in A$，都有$(a\circ b)\circ c=a\circ(b\circ c)$,则称$\circ$适合结合律。
+		\item 如果对于$\forall a,b\in A$，都有$a\circ b=b\circ a$,则称$\circ$适合交换律。
+	\end{itemize}
+\end{theorem}
+
+\begin{example}
+	在有理数集$\mathbb{Q}$上规定代数运算$\circ$为普通加法+,那么显然$\circ$适合结合律和交换律，并且显然有:
+	\begin{center}
+		$[(1\circ 2)\circ(-1)]\circ(-2)=0$,
+
+		$1\circ\{[2\circ(-1)]\circ(-2)\}=0$,
+
+		$\{[(-2)\circ 2]\circ 1\}\circ(-1)=0$.
+	\end{center}
+从这个例子可以看出，当$\circ$适合结合律和交换律的时候，\textcolor{Salmon}{任意方式加括号不改变若干个元素的乘积，任意改变元素的顺序也不改变若干元素的乘积。}
+\end{example}
 
 \chapter{In-text Element Examples}
 
@@ -377,8 +436,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                 & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                    & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                   & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}
