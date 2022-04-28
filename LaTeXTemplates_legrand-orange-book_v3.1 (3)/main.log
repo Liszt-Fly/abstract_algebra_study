@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  27 APR 2022 12:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  28 APR 2022 13:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1471,12 +1471,6 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-
-Package biblatex Warning: citation 'Smith:2022jd' was not found at all in the .bbl, bibliography labels cannot be generated, please correct the citation.
-
-
-Package biblatex Warning: citation 'Smith:2021qr' was not found at all in the .bbl, bibliography labels cannot be generated, please correct the citation.
-
 Package biblatex Info: Reference section=0 on input line 32.
 Package biblatex Info: Reference segment=0 on input line 32.
 Package hyperref Info: Link coloring ON on input line 32.
@@ -1712,7 +1706,7 @@ Overfull \hbox (390.95769pt too wide) detected at line 41
  []
 
 
-Underfull \vbox (badness 1668) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3
 
@@ -1917,43 +1911,40 @@ Package mdframed Info: mdframed works in twoside mode on input line 238.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 238.
+Package mdframed Info: mdframed works in twoside mode on input line 258.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 258.
+Package mdframed Info: mdframed works in twoside mode on input line 262.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 262.
  [14]
+Missing character: There is no 种 ("79CD) in font zptmcm7t!
+ [15] [16
+
+]
 Chapter 2.
 File: Images//orange2.jpg Graphic file (type bmp)
 <Images//orange2.jpg>
-
-LaTeX Warning: Citation 'Smith:2022jd' on page 15 undefined on input line 262.
-
-
-LaTeX Warning: Citation 'Smith:2021qr' on page 15 undefined on input line 262.
-
-
-Overfull \hbox (38.97758pt too wide) in paragraph at lines 262--263
-[]\TU/PingFangHK(0)/m/it/10.95 This statement requires citation [[]]; this one is more specific [[]]. 
- []
-
-
-Overfull \hbox (5.78572pt too wide) in paragraph at lines 268--269
-[]\TU/PingFangHK(0)/m/it/10.95 This is a URL link: [][]LaTeX Templates[][]. This is an email link: [][]example@example.com[][].
- []
-
-[15
-
-]
 Missing character: There is no č (U+010D) in font PingFang HK Regular/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no š (U+0161) in font PingFang HK Regular/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [17]
 Missing character: There is no Č (U+010C) in font PingFang HK Regular/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no Š (U+0160) in font PingFang HK Regular/OT:script=latn;language=dflt;mapping=tex-text;!
- [16] (./main.ptc) [17
+ [18] (./main.ptc) [19
 
-] [18]
+] [20]
 Chapter 3.
 File: Images//orange2.jpg Graphic file (type bmp)
 <Images//orange2.jpg>
-Package mdframed Info: mdframed works in twoside mode on input line 348.
+Package mdframed Info: mdframed works in twoside mode on input line 425.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 348.
+(mdframed)              on input line 425.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/PingFangHK(0)/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1972,26 +1963,89 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangHK(0)/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
-Package mdframed Info: mdframed works in twoside mode on input line 360.
+Package mdframed Info: mdframed works in twoside mode on input line 437.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 360.
-Package mdframed Info: mdframed works in twoside mode on input line 370.
+(mdframed)              on input line 437.
+Package mdframed Info: mdframed works in twoside mode on input line 447.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 370.
+(mdframed)              on input line 447.
 
 Underfull \vbox (badness 3758) has occurred while \output is active []
 
- [19
+ [21
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 406.
+Package mdframed Info: mdframed works in twoside mode on input line 483.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 406.
- [20]
-Package mdframed Info: mdframed works in twoside mode on input line 455.
+(mdframed)              on input line 483.
+ [22]
+Package mdframed Info: mdframed works in twoside mode on input line 532.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframe
+(mdframed)              on input line 532.
+ [23] [24
+
+]
+Chapter 4.
+File: Images//orange3.jpg Graphic file (type bmp)
+<Images//orange3.jpg>
+File: Images//creodocs_logo.pdf Graphic file (type pdf)
+<use Images//creodocs_logo.pdf>
+[25]
+File: Images//creodocs_logo.pdf Graphic file (type pdf)
+<use Images//creodocs_logo.pdf>
+ [26]
+
+Package biblatex Warning: Type 'article' not found on input line 645.
+
+
+LaTeX Warning: Empty bibliography on input line 645.
+
+
+Package biblatex Warning: Type 'book' not found on input line 650.
+
+
+LaTeX Warning: Empty bibliography on input line 650.
+
+[27
+
+] [28
+
+]
+No file main.ind.
+附录 A.
+File: Images//orange2.jpg Graphic file (type bmp)
+<Images//orange2.jpg>
+[29
+
+
+] [30
+
+]
+附录 B.
+File: Images//orange2.jpg Graphic file (type bmp)
+<Images//orange2.jpg>
+\tf@ptc=\write9
+\openout9 = `main.ptc'.
+
+[31] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 36301 strings out of 476919
+ 739135 string characters out of 5821840
+ 1549191 words of memory out of 5000000
+ 55586 multiletter control sequences out of 15000+600000
+ 435362 words of font info for 166 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 101i,15n,103p,842b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (31 pages).

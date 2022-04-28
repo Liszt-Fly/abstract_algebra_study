@@ -92,7 +92,7 @@
 
 %------------------------------------------------
 
-\chapter{Pre-requisite knowledge:Set Theory}
+\chapter{Pre-requisite knowledge:Basic Conception}
 
 \section{Explanation of symbols}
 在抽象代数的学习中，会使用到集合中的知识，当然也会使用到集合中的各种符号，在这一小节中，对这些符号进行一遍复习。
@@ -234,7 +234,7 @@
 \end{example}
 
 \subsection{operational rule}
-
+\subsubsection{associative law \&commutative law}
 \begin{theorem}
 	设$circ$是集合A上的一个代数运算。
 	\begin{itemize}
@@ -252,20 +252,97 @@
 
 		$\{[(-2)\circ 2]\circ 1\}\circ(-1)=0$.
 	\end{center}
-从这个例子可以看出，当$\circ$适合结合律和交换律的时候，\textcolor{Salmon}{任意方式加括号不改变若干个元素的乘积，任意改变元素的顺序也不改变若干元素的乘积。}
+	从这个例子可以看出，当$\circ$适合结合律和交换律的时候，\textcolor{Salmon}{任意方式加括号不改变若干个元素的乘积，任意改变元素的顺序也不改变若干元素的乘积。}
 \end{example}
 
+\begin{theorem}
+	如果集合A上的代数运算适合结合律，那么任意加括号都不改变若干元素的运算结果。
+\end{theorem}
+
+\begin{theorem}
+	如果集合A上的代数运算适合结合律和交换律，那么任意加括号，任意改变元素的顺序，都不改变若干元素的运算结果。
+\end{theorem}
+
+\begin{example}
+	设A=\{所有不为零的实数\},$\circ$是普通数的除法$a\circ b=\frac{a}{b}$,判断$\circ$是否适合结合律。
+
+	\textcolor{Salmon}{不适合。反例:$(36\circ 12)\circ 3=3\circ3=1$,而$36\circ (12\circ 3)=36\circ 4=9$}
+
+\end{example}
+\begin{remark}
+	证明结论中，要证明一个结论是错误的，只需要举出一个反例即可。而要证明一个结论是对的，需要证明所有情况都是正确的。
+\end{remark}
+
+\begin{example}
+	设A=\{a,b,c\}，规定:
+	\begin{center}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\cline{1-4}
+				$\circ$ & a & b & c \\ \cline{1-4}
+				a       & a & b & c \\ \cline{1-4}
+				b       & b & c & a \\ \cline{1-4}
+				c       & c & a & b \\ \cline{1-4}
+			\end{tabular}
+		\end{table}
+	\end{center}
+	这道题的结论是所有情况都是正确的，但是我们要证明这个结论正确，我们需要证明每一个结论都是正确的。但是如果挨个证明，总共有27个等式。我们观察a发现这是一种特殊情况，$a\circ any=any,any\circ=any$,所以a是类似于乘法中1的作用，我们根据这个特性，将情况分为x,y,z中有a和x,y,z中不存在a的情况。
+	\begin{proof}
+		对于任意的x,y,z$\in A$,
+
+		1. 当x,y,z中至少有一个为a的时候，结合律成立:
+
+		a. 当x=a的时候，$(x\circ y)\circ z=y\circ z,x\circ(y\circ z)=y\circ z$
+
+		b. 当y=a的时候,$(x\circ y)\circ z=x\circ z,x\circ(y\circ z)=x\circ z$
+
+		c.当z=a的时候，$(x\circ y)\circ z=x\circ y,x\circ(y\circ z)=x\circ y$
+
+		2.当x,y,z中任何一个都不为a的时候，结合律成立，这个时候情况只有$2^3=8种$，只需要证明每一种情况均成立，则结合律成立。
+
+		a.$(b\circ b)\circ b=c\circ b=a,b\circ(b\circ b)=b\circ c=a$
+
+		b.$(b\circ b)\circ c=c\circ c=b,b\circ(b\circ c)=b\circ a=b$
+
+		c.$(b\circ c)\circ b=a\circ b=b,b\circ(c\circ b)=b\circ a=b$
+
+		d.$(b\circ c)\circ c=a\circ c=c,b\circ(c\circ c)=(b\circ b=c)$
+
+		e.$(c\circ b)\circ b=a\circ b=b,c\circ(b\circ b)=c\circ c=b$
+
+		f.$(c\circ b)\circ c=a\circ c=c,c\circ (b\circ c)=c\circ a=c$
+
+		g.$(c\circ c)\circ b=b\circ b=c,c\circ (c\circ b)=c\circ a=c$
+
+		h.$(c\circ c)\circ c=b\circ c=a,c\circ (c\circ c)=c\circ b=a$
+	\end{proof}
+\end{example}
+
+\begin{example}
+	设A=\{a,b,c,d\},规定:
+	\begin{center}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\cline{1-5}
+				$\circ$ & a & b & c                  & d                  \\ \cline{1-5}
+				a       & a & b & c                  & d                  \\ \cline{1-5}
+				b       & b & d & a                  & c                  \\ \cline{1-5}
+				c       & c & a & b                  & \textcolor{red}{d} \\ \cline{1-5}
+				d       & d & c & \textcolor{red}{a} & b                  \\ \cline{1-5}
+			\end{tabular}
+		\end{table}
+	\end{center}
+	判断$\circ$是否适合交换律。已知有限集A上的代数运算$\circ$的运算表，你能判断$\circ$是否适合交换律吗？得到的规律是什么？
+
+	\textcolor{Salmon}{不合适,$c\circ d=d$,而$d\circ c=a$，结论:代数运算$\circ$适合交换律当且仅当其运算表中元素关于主对角线对称。}
+\end{example}
+
+\subsubsection{cancellation law}
 \chapter{In-text Element Examples}
 
-\section{Referencing Publications}\index{Citation}
 
-This statement requires citation \cite{Smith:2022jd}; this one is more specific \cite[162]{Smith:2021qr}.
-
-%------------------------------------------------
-
-\section{Link Examples}\index{Links}
-
-This is a URL link: \href{https://www.latextemplates.com}{LaTeX Templates}. This is an email link: \href{mailto:example@example.com}{example@example.com}. This is a monospaced URL link: \url{https://www.LaTeXTemplates.com}.
 
 %------------------------------------------------
 
@@ -436,8 +513,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                                                    & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                                                   & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                     & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                                                                                                    & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}
