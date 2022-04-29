@@ -340,6 +340,59 @@
 \end{example}
 
 \subsubsection{cancellation law}
+\begin{theorem}
+	设$\circ$是集合A上的一个代数运算,$\forall a,b,c\in A.$,
+
+	1. 若$a\circ b=a\circ c\Rightarrow b=c$，则称$\circ$适合左消去律
+
+	2. 若$b\circ a=c\circ a\Rightarrow b=c$,则称$\circ$适合右消去律。
+	3. 若$\circ$既适合右消去律又适合左消去律，则称$\circ$适合消去律。
+\end{theorem}
+
+\begin{example}
+	设A=\{a,b,c,d\},规定:
+	\begin{center}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\cline{1-5}
+				$\circ_3$ & a & b & c & d \\ \cline{1-5}
+				a         & a & b & c & b \\ \cline{1-5}
+				b         & b & a & d & c \\ \cline{1-5}
+				c         & c & d & a & b \\ \cline{1-5}
+				d         & d & c & b & a \\ \cline{1-5}
+			\end{tabular}
+		\end{table}
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\cline{1-5}
+				$\circ_4$ & a & b & c & d \\ \cline{1-5}
+				a         & a & b & c & d \\ \cline{1-5}
+				b         & b & a & d & c \\ \cline{1-5}
+				c         & c & d & a & b \\ \cline{1-5}
+				d         & d & c & b & a \\ \cline{1-5}
+			\end{tabular}
+		\end{table}
+	\end{center}
+	判断上述代数运算是否适合左消去律或右消去律。已知有限集A上的代数运算$\circ$的运算表，你能得到判断$\circ$是否适合左消去律或右消去律的规律吗？
+
+	\textcolor{Salmon}{由于集合中元素具有互异性，每一个方格中的元素都不能相等，这也就说明如果对于一行某一个元素对应每一列的元素结果为相等的，说明不符合左消去律，而某列一个元素对应每一行的元素结果为相等的，则说明不符合右消去律。举个例子:以第一个表格中第二行a为例，对应第三列和第五列的元素都是b,$a\circ b=b,a\circ d=b\Rightarrow b=d$,由于集合元素中的互异性，$b\not=d$，所以左消去律不符合，同理右消去律也不符合。对于第二个表格，既符合左消去律，也符合右消去律，所以符合消去律。}
+\end{example}
+
+\subsection{distributive law}
+特别注意，分配律是对于两种代数运算而言的，和之前的运算律不一样。
+\begin{theorem}
+
+	设$\otimes,\oplus$是集合A上的两个代数运算，$\forall a_1,a_2,b\in A$.
+
+	1. 若$b\otimes(a_1\oplus a_2)=(b\otimes a_1)\oplus(b\otimes a_2)$,则称$\otimes$对于$\oplus$适合左分配律；
+
+	2. 若$(a_1\oplus a_2)\otimes b=(a_1\otimes b)\oplus(a_2\otimes b)$,则称$\otimes$对于$\oplus$适合右分配律，或者第二分配律。
+
+	3. 若$\otimes,\oplus$既适合左分配律，又适合右分配律，则称$\otimes,\oplus$适合分配律。
+\end{theorem}
+
 \chapter{In-text Element Examples}
 
 
@@ -513,8 +566,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                     & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                                                                                                                                    & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                  & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                                                                                                                                 & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}

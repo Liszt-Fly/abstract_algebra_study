@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  28 APR 2022 13:44
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  29 APR 2022 11:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/qiaoyang/Desktop/abstract_algebra_study/LaTeXTemplates_legrand-orange-book_v3.1 (3)/main"
-(/Users/qiaoyang/Desktop/abstract_algebra_study/LaTeXTemplates_legrand-orange-book_v3.1 (3)/main.tex
+**/Users/qiaoyang/Desktop/abstract_algebra_study/note/main
+(/Users/qiaoyang/Desktop/abstract_algebra_study/note/main.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./LegrandOrangeBook.cls
 Document Class: LegrandOrangeBook 2022/01/26 The Legrand Orange Book Class v3.0
@@ -1701,12 +1701,12 @@ Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangHK(0)/m/n/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (390.95769pt too wide) detected at line 41
+Overfull \hbox (390.95769pt too wide) detected at line 43
 [][][][][][] [][][][][][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5847) has occurred while \output is active []
 
  [3
 
@@ -1921,9 +1921,18 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 262.
  [14]
 Missing character: There is no 种 ("79CD) in font zptmcm7t!
- [15] [16
-
-]
+Package mdframed Info: mdframed works in twoside mode on input line 343.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 343.
+Package mdframed Info: Not enough space on this page on input line 350.
+ [15]
+Package mdframed Info: Not enough space on this page on input line 350.
+Package mdframed Info: mdframed works in twoside mode on input line 385.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 385.
+ [16]
 Chapter 2.
 File: Images//orange2.jpg Graphic file (type bmp)
 <Images//orange2.jpg>
@@ -1932,7 +1941,9 @@ Missing character: There is no š (U+0161) in font PingFang HK Regular/OT:script
 
 Underfull \vbox (badness 5548) has occurred while \output is active []
 
- [17]
+ [17
+
+]
 Missing character: There is no Č (U+010C) in font PingFang HK Regular/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no Š (U+0160) in font PingFang HK Regular/OT:script=latn;language=dflt;mapping=tex-text;!
  [18] (./main.ptc) [19
@@ -1941,10 +1952,10 @@ Missing character: There is no Š (U+0160) in font PingFang HK Regular/OT:script
 Chapter 3.
 File: Images//orange2.jpg Graphic file (type bmp)
 <Images//orange2.jpg>
-Package mdframed Info: mdframed works in twoside mode on input line 425.
+Package mdframed Info: mdframed works in twoside mode on input line 478.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 425.
+(mdframed)              on input line 478.
 Package microtype Info: Character `textendash ' is missing
 (microtype)             in font `TU/PingFangHK(0)/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1963,29 +1974,29 @@ Package microtype Info: Character `textquotedblleft ' is missing
 Package microtype Info: Character `textquotedblright ' is missing
 (microtype)             in font `TU/PingFangHK(0)/m/n/8'.
 (microtype)             Ignoring protrusion settings for this character.
-Package mdframed Info: mdframed works in twoside mode on input line 437.
+Package mdframed Info: mdframed works in twoside mode on input line 490.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 437.
-Package mdframed Info: mdframed works in twoside mode on input line 447.
+(mdframed)              on input line 490.
+Package mdframed Info: mdframed works in twoside mode on input line 500.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 447.
+(mdframed)              on input line 500.
 
 Underfull \vbox (badness 3758) has occurred while \output is active []
 
  [21
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 483.
+Package mdframed Info: mdframed works in twoside mode on input line 536.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 483.
+(mdframed)              on input line 536.
  [22]
-Package mdframed Info: mdframed works in twoside mode on input line 532.
+Package mdframed Info: mdframed works in twoside mode on input line 585.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 532.
+(mdframed)              on input line 585.
  [23] [24
 
 ]
@@ -1999,16 +2010,16 @@ File: Images//creodocs_logo.pdf Graphic file (type pdf)
 <use Images//creodocs_logo.pdf>
  [26]
 
-Package biblatex Warning: Type 'article' not found on input line 645.
+Package biblatex Warning: Type 'article' not found on input line 698.
 
 
-LaTeX Warning: Empty bibliography on input line 645.
+LaTeX Warning: Empty bibliography on input line 698.
 
 
-Package biblatex Warning: Type 'book' not found on input line 650.
+Package biblatex Warning: Type 'book' not found on input line 703.
 
 
-LaTeX Warning: Empty bibliography on input line 650.
+LaTeX Warning: Empty bibliography on input line 703.
 
 [27
 
@@ -2040,12 +2051,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36301 strings out of 476919
- 739135 string characters out of 5821840
- 1549191 words of memory out of 5000000
- 55586 multiletter control sequences out of 15000+600000
+ 36314 strings out of 476919
+ 739771 string characters out of 5821840
+ 1550243 words of memory out of 5000000
+ 55599 multiletter control sequences out of 15000+600000
  435362 words of font info for 166 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,15n,103p,842b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,15n,103p,801b,872s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (31 pages).
