@@ -9,6 +9,8 @@
 \usepackage{fontspec}
 \usepackage{ctex}
 \usepackage{color}
+\usepackage{caption}
+\captionsetup{font={scriptsize}}
 \setmainfont[]{PingFang HK}
 \setCJKmainfont{Heiti SC}
 % Book information for PDF metadata, remove/comment this block if not required
@@ -393,6 +395,89 @@
 	3. 若$\otimes,\oplus$既适合左分配律，又适合右分配律，则称$\otimes,\oplus$适合分配律。
 \end{theorem}
 
+\section{Mapping and transformations}
+\begin{theorem}
+	设$\phi:A\rightarrow\bar{A}$是一个映射，对于任意的$a,b\in \bar{A}$,如果$a\not=b\Rightarrow\phi(a)\not=\phi(b)$,则称$\phi$是从A到$\bar{A}$的\emph{单射}。
+\end{theorem}
+
+\begin{theorem}
+	$\phi:A\rightarrow\bar{A}$是单射当且仅当对于任意的$a,b\in\bar{A},\phi(a)=\phi(b)\Rightarrow=b$
+\end{theorem}
+
+\begin{theorem}
+	设$\phi:A\rightarrow\bar{A}$是一个映射，如果对于任意的$b\in\bar{A}$,都存在$a\in A$，有$b=\phi(a)$,则称$\phi$是从A到$\bar{A}$的满射。既是单射又是满射的映射称为一一映射(双射)。
+\end{theorem}
+
+\begin{theorem}
+	设$f:A\rightarrow B$和$g:B\rightarrow C$是两个映射。规定$g\circ f:A\rightarrow C$为对于任意的$x\in A$,$(g\circ f)(x)=g(f(x))$，则称$g\circ f$为f与g的复合映射。
+\end{theorem}
+
+\begin{example}
+	设f(x)=sinx,g(x)=$x^3$，则f与g的复合函数为$(g\circ f)(x)=g(f(x))=sin^3x$
+\end{example}
+
+\begin{theorem}
+	单射的复合是单射；满射的复合是满射；双射的复合是双射。
+\end{theorem}
+为了方便理解，可以来看看这几幅图进行直观对比：
+\begin{figure}[H]
+	\centering
+	\centering
+	\begin{minipage}[t]{0.25\textwidth}
+		\centering
+		\includegraphics[width=2cm]{Images/Bijection.svg.png}
+		\caption{双射}
+	\end{minipage}
+	\begin{minipage}[t]{0.23\textwidth}
+		\centering
+		\includegraphics[width=2cm]{Images/240px-Injection.svg.png}
+		\caption{单射但不满射}
+	\end{minipage}
+	\begin{minipage}[t]{0.23\textwidth}
+		\centering
+		\includegraphics[width=2cm]{Images/240px-Surjection.svg.png}
+		\caption{满射但不单射}
+	\end{minipage}
+	\begin{minipage}[t]{0.23\textwidth}
+		\centering
+		\includegraphics[width=2cm]{Images/240px-Injection.svg.png}
+		\caption{单射但不满射}
+	\end{minipage}
+\end{figure}
+
+\begin{vocabulary}[单射]
+	指将不同的变量映射到不同的值的函数
+\end{vocabulary}
+
+\begin{vocabulary}[满射]
+	指陪域等于值域的函数。
+\end{vocabulary}
+\begin{vocabulary}[双射]
+	既是单射又是满射的函数
+\end{vocabulary}
+
+\begin{theorem}
+	设$f:A\rightarrow B$和$g:B\rightarrow A$是两个映射。如果$f\circ g=id_B:B\rightarrow B$且$g\circ f=id_A:A\Rightarrow A$,则称f与g互为逆映射。
+\end{theorem}
+
+
+\begin{theorem}
+	双射存在唯一的逆映射，且这个逆映射也是双射
+\end{theorem}
+
+\begin{proof}
+	设$f:A\rightarrow B$是一个双射.
+
+	\textcolor{Salmon}{我们规定$f^{-1}:B\rightarrow A$ 为对于任意的$y=f(x)\in B,f^{-1}(y)=x$,即原像运算。由于f是满射，说明B集合中的每一个元素都可以对应A中唯一的元素，这符合映射的定义（详情可以看笛卡尔积定义映射的部分)，所以通过满射的条件，我们证明了双射存在逆映射}
+
+	\textcolor{teal}{接下来我们应该证明逆映射是一个单射。任意取$f(x_1)=y_1\not=y_2=f(x_2)\in B$,这个是根据f是单射可以得到的，所以$f^{-1}(y_1)=x_1\not=x_2=f^{-1}(y_2)$,根据$x_1\not=x_2$作为媒介，我们推出了$f^{-1}(y_1)\not=f^{-1}(y_2)$,从而可以证明$f^{-1}$是单射}
+
+	\textcolor{blue}{接下来证明逆映射是满射的情况,这个的证明和证明单射是非常像的，由于f是映射,任取$x\in A$,$f(x)=y\in B$。这说明了x在$f^{-1}$的原像是存在的，从而$f^{-1}$自然是满射}。
+
+	\textcolor{black}{然后需要证明$f^{-1}$是f的逆映射。对于任意的$x\in A,$如果令$x_1=(f^{-1}\circ f)(x)$,则$x_1=f^{-1}(f(x))$,从而$f(x)=f(x_1)$。由于f是单射，所以可以得到$x_1=x$,于是x=$(f^{-1}\circ f)(x)$对于任意的$x\in A$都成立。这就证明了$f^{-1}\circ f=id_A$，同理可证$f\circ f^{-1}=id_B$}
+
+	\textcolor{gray}{最后需要证明逆映射的唯一性,设g也是f的一个逆映射，则由于逆映射的定义必然有$g\circ f=id_A,f\circ g=id_B$，所以$g=g\circ id_B=g\circ(f\circ f^{-1}=(g\circ f)\circ f^{-1})=id_A\circ f^{-1}=f^{-1}$}
+\end{proof}
 \chapter{In-text Element Examples}
 
 
@@ -566,8 +651,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                  & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                                                                                                                                                                 & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                      & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                                                                                                                                                                                                                                     & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}
