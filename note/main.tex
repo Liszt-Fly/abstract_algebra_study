@@ -478,6 +478,37 @@
 
 	\textcolor{gray}{最后需要证明逆映射的唯一性,设g也是f的一个逆映射，则由于逆映射的定义必然有$g\circ f=id_A,f\circ g=id_B$，所以$g=g\circ id_B=g\circ(f\circ f^{-1}=(g\circ f)\circ f^{-1})=id_A\circ f^{-1}=f^{-1}$}
 \end{proof}
+
+\begin{definition}
+	一个A到A得映射叫做A的一个变换。一个A到A的单射，满射，或A与A之间的一一映射（双射）叫做A的一个单射变换，满射变换或一一变换。
+\end{definition}
+
+\begin{theorem}
+	变换的复合适合结合律。
+\end{theorem}
+
+\begin{proof}
+	设T表示集合A上所有的变换的集合，对于任意的$f,g,h\in T,$因为对于任意的$x\in A,$:
+
+	$((f\circ g)\circ h)(x)=(f\circ g)(h(x))=f(g(h(x)))$,
+
+	$(f\circ(g\circ h))(x)=f((g\circ h)(x))=f(g(h(x)))$
+
+	最后根据映射相等的定义，立即推$(f\circ g)\circ h=f(\circ(g\circ h))$
+\end{proof}
+
+\begin{example}
+	假定$\phi$是A与$\bar{A}$之间的一一映射,$a\in A$,则$\phi^{-1}[\phi(a)]=？ \phi[\phi^{-1}(a)]=?$
+
+	若$phi$是A的一一变换，这两个问题的结果又是什么？
+
+	\textcolor{Salmon}{
+		\begin{enumerate}
+			\item $\phi$是A与$\bar{A}$之间的一一映射，$\phi^{-1}[\phi(a)]=a,\phi[\phi^{-1}(a)]$一般不存在，因为一一映射是从A$\Rightarrow B$的一个映射，在B中不一定定义域包括$\phi(a)$
+			\item $\phi$是A的一个一一变换的时候，两式都等于a，对于第二条可以使用变换的结合律来得到结果$\phi^[\phi^{-1}(a)]=\phi^{-1}[\phi(a)]=a$,关键在于此时$\phi(a),a$都在A中，一定有定义。
+		\end{enumerate}
+	}
+\end{example}
 \chapter{In-text Element Examples}
 
 
@@ -651,8 +682,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                      & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                                                                                                                                                                                                                                                                     & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                                                 & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                                                                                                                                                                                                                                                                & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}
