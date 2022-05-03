@@ -29,80 +29,84 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Mapping and transformations}{16}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}In-text Element Examples}{19}{chapter.2}%
+\contentsline {section}{\numberline {1.5}同态}{18}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Lists}{19}{section.2.1}%
+\contentsline {section}{\numberline {1.6}同构与自同构}{20}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Numbered List}{19}{subsection.2.1.1}%
+\contentsline {chapter}{\numberline {2}In-text Element Examples}{23}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Bullet Point List}{19}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.1}Lists}{23}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Descriptions and Definitions}{19}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.1}Numbered List}{23}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}International Support}{20}{section.2.2}%
+\contentsline {subsection}{\numberline {2.1.2}Bullet Point List}{23}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Ligatures}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.1.3}Descriptions and Definitions}{23}{subsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}International Support}{24}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Ligatures}{24}{section.2.3}%
 \ttl@stoptoc {part@1}
 \ttl@starttoc {part@2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {II}Part Two Title}{21}{part.2}%
+\contentsline {part}{\numberline {II}Part Two Title}{25}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Mathematics}{23}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Mathematics}{27}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Theorems}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Theorems}{27}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Several equations}{23}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}Several equations}{27}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Single Line}{23}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Single Line}{27}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Definitions}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Definitions}{27}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Notations}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Notations}{28}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Remarks}{24}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Remarks}{28}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Corollaries}{24}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Corollaries}{28}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Propositions}{24}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Propositions}{28}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}Several equations}{24}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.1}Several equations}{28}{subsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}Single Line}{24}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.2}Single Line}{28}{subsection.3.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Examples}{24}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Examples}{28}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7.1}Equation Example}{24}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.1}Equation Example}{28}{subsection.3.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7.2}Text Example}{25}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.2}Text Example}{29}{subsection.3.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Exercises}{25}{section.3.8}%
+\contentsline {section}{\numberline {3.8}Exercises}{29}{section.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.9}Problems}{25}{section.3.9}%
+\contentsline {section}{\numberline {3.9}Problems}{29}{section.3.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.10}Vocabulary}{25}{section.3.10}%
+\contentsline {section}{\numberline {3.10}Vocabulary}{29}{section.3.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Presenting Information and Results with a Long Chapter Title}{27}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Presenting Information and Results with a Long Chapter Title}{31}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Table}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Table}{31}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Figure}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Figure}{31}{section.4.2}%
 \ttl@stoptoc {part@2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{29}{chapter*.13}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{33}{chapter*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{29}{chapter*.13}%
+\contentsline {section}{Articles}{33}{chapter*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{29}{chapter*.13}%
+\contentsline {section}{Books}{33}{chapter*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{31}{section*.14}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{35}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendices}{31}{section*.15}%
+\contentsline {chapter}{Appendices}{35}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix Chapter Title}{31}{appendix.a.A}%
+\contentsline {chapter}{\numberline {A}Appendix Chapter Title}{35}{appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Appendix Section Title}{31}{section.a.A.1}%
+\contentsline {section}{\numberline {A.1}Appendix Section Title}{35}{section.a.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Appendix Chapter Title}{33}{appendix.a.B}%
+\contentsline {chapter}{\numberline {B}Appendix Chapter Title}{37}{appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}Appendix Section Title}{33}{section.a.B.1}%
+\contentsline {section}{\numberline {B.1}Appendix Section Title}{37}{section.a.B.1}%
 \contentsfinish 

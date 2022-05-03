@@ -509,6 +509,192 @@
 		\end{enumerate}
 	}
 \end{example}
+
+\section{同态}
+\begin{definition}
+	设$(A,\circ),(\bar{A},\bar{\circ})$是两个代数系统，$\phi:A\rightarrow \bar{A}$是一个映射，若对于任意的$a,b\in A$,都有$\phi(a\circ b)=\phi(a)\bar{\circ}\phi(b)$，(乘积的像等于像的乘积)，则称$\phi$是从A到$\bar{A}$的同态映射。满的同态映射也称为同态满射，或者满同态。若A到$\bar{A}$存在满同态，则称两个代数系统$A,\bar{A}$是同态的，记为$A\backsim\bar{A}$。
+\end{definition}
+
+\begin{remark}
+	在下面的三个例子中，我们用到了两个代数系统$(A,\circ),(\bar{A},\circ)$。这里A=$\mathbb{Z},\circ$ 是普通数的加法，而$\bar{A}=$\{-1,1\},$\bar{\circ}$ 是普通数的乘法。
+
+\end{remark}
+
+
+\begin{example}
+	$\phi_1:A\Rightarrow\bar{A}$定义为:对于任意的$a\in A,\phi_1(a)=1,$则$\phi_1$是同态，但不是满同态。
+\end{example}
+\begin{proof}
+	\textcolor[HTML]{e74c3c}{由于$\bar{A}$中的集合元素有两个，而根据这个映射法则只能对应一个，所以肯定不会是满同态，接下来验证是否为同态，我们只需要根据定义$\phi(a+b)$，由于a+b肯定为整数，所以为1，而$\phi(a)\times \phi(b)=1\times 1=1$，两式相等，所以同态。}
+\end{proof}
+
+\begin{example}
+	$\phi_2:A\rightarrow\bar{A}$的定义为:$\phi_2(a)=\begin{cases}
+			-1, & \text{a为奇数} \\
+			1   & \text{a为偶数}
+		\end{cases}$
+	,则$\phi_2$是满同态。
+\end{example}
+
+\begin{proof}
+	\textcolor{Salmon}{首先证明同态，由于和奇偶性相关，我们需要分情况进行讨论:假设第一个数为a,第二个数为b
+		\begin{itemize}
+			\item a为奇，b为偶。$\phi(a+b)=-1,\phi(a)\times\phi(b)=-1,$符合同态的定义
+			\item a为奇，b为奇。$\phi(a+b)=1,\phi(a)\times\phi(b)=1$，符合同态的定义
+			\item a为偶，b为奇,$\phi(a+b)=-1,\phi(a)\times\phi(b)=-1$，符合同态的定义
+			\item a为偶，b为偶,$\phi(a+b)=1,\phi(a)\times\phi(b)=1$，符合同态的定义
+		\end{itemize}
+		由于$\bar{A}$为\{-1,1\},而映射的结果也是,所以是满同态。
+	}
+\end{proof}
+
+\begin{example}
+	$\phi_3:A\rightarrow\bar{A}$定义为:对于任意的$a\in A,\phi_3(a)=-1,则\phi_3$不是同态，也不是满射。
+\end{example}
+
+\begin{proof}
+	\textcolor{Salmon}{由于集合A是整数范围，而映射结果都是-1，肯定不是满射。$\phi(a+b)=-1\not=\phi(a)\times\phi(b)=1$，所以也不是同态}
+\end{proof}
+
+\begin{theorem}
+	设$(A,\circ),(\bar{A},\bar{\circ})$是两个代数系统，若$A\backsim \bar{A}$，则
+
+	(1)若$\circ$适合结合律，那么$\bar{\circ}$也适合结合律
+
+	(2)若$\circ$适合交换律，那么$\bar{\circ}$也适合交换律
+\end{theorem}
+\begin{proof}
+
+	先证明结合律:
+
+	因为$A\backsim\bar{A}$,则说明代数系统A到$\bar{A}$是满同态的。由于满射,$\forall \phi(a),\phi(b),\phi(c)\in \bar{A}$,都存在对应的$a,b,c\in A$。$(\phi(a)\circ\phi(b))\circ\phi(c)=\phi(a\circ b)\circ\phi(c)=\phi(a\circ b\circ c)$，又由于$\phi(a)\circ(\phi(b)\circ\phi(c))=\phi(a)\circ\phi(b\circ c)=\phi(a\circ b\circ c)$,所以结合律成立。
+
+	\textcolor{gray}{接着证明交换律成立:$\phi(a)\circ\phi(b)=\phi(a\circ b)$，而$\phi(b)\circ\phi(a)=\phi(b\circ a)$,由于$a,b\in A$,且A的代数系统遵循交换律，所以$\phi(a)\circ\phi(b)=\phi(b)\circ\phi(a)$,故交换律成立。}
+\end{proof}
+
+类似地，我们可以得到下面的结论:
+\begin{theorem}
+	设$(A,\odot,\oplus),(\bar{A},\bar{\odot},\bar{\oplus})$是两个代数系统，$\phi:A\rightarrow\bar{A}$是满射，若对于任意的$a,b\in A$,有
+
+	$\phi(a\odot b)=\phi(a)\bar{\odot}\phi(b),\quad \phi(a\oplus b)=\phi(a)\bar{\oplus}\phi(b)$
+
+	则
+
+	(1)若$\odot,\oplus$适合第一分配律，那么$\bar{\odot},\bar{\oplus}$也适合第一分配律。
+
+	(2)若$\odot,\oplus$适合第二分配律，那么$\odot,\oplus$也适合第二分配律。
+\end{theorem}
+
+\begin{proof}
+	由于$\phi:A\rightarrow\bar{A}$是满射，所以$\forall \phi(a),\phi(b),\phi(c)$，都存在$a,b,c\in A$，首先来证明左分配律:
+
+	$\phi(a)\bar{\odot}(\phi(b)\bar{\oplus}\phi(c))=\phi(a)\bar{\odot}(\phi(b)\oplus\phi(c))=\phi(a\odot (b\oplus c))$,由于A中的代数系统符合第一分配律，$a\odot(b\oplus c)=(a\odot b)\oplus(a\odot c)$,所以$\phi(a\odot(b\oplus c))=\phi((a\odot b)\oplus(a\odot c))=\phi(a\odot b)\bar{\oplus}\phi(a\odot c)=(\phi(a)\bar{\odot}\phi(b))\bar{\oplus}(\phi(a)\bar{\odot}\phi(c))$，从而得证，而第二分配律证法相同，省略。
+\end{proof}
+
+\begin{example}
+	设$(A,\circ),(\bar{A},\bar{\circ}),(\bar{\bar{A}},\bar{\bar{\circ}})$是三个代数系统。证明:若$A\sim\bar{A},\bar{A}\sim\bar{\bar{A}}$，则$A\sim\bar{\bar{A}}$
+
+	\textcolor{Salmon}{由于$A\sim\bar{A},\bar{A}\sim\bar{\bar{A}}$,所以存在满同态:$f:A\rightarrow \bar{A},g:\bar{A}\rightarrow\bar{\bar{A}}$,因为f,g都是满射,所以复合映射$g\circ f:A\rightarrow\bar{\bar{A}}$也是满射。下面来证明$g\circ f$是同态映射\\对于任意的$a,b\in A$\\$(g\circ f)(a\circ b)=g(f(a\circ b))$\\=$g(f(a)\bar{\circ}f(b))=g(f(a))\bar{\bar{\circ}}g(f(b))$\\最后根据复合映射的定义:$=(g\circ f)(a)\bar{\bar{\circ}}(g\circ f)(b)$\\所以$g\circ f$是一个同态映射，因此$A\circ\bar{\bar{A}}$}
+\end{example}
+
+
+\begin{theorem}
+	同态映射的复合映射必定是同态映射
+\end{theorem}
+类似的结果还有:
+\begin{itemize}
+	\item 满同态的复合一定是满同态；
+	\item 单同态的复合一定是单同态；
+	\item 同构的复合一定是同构；
+\end{itemize}
+
+\section{同构与自同构}
+\begin{definition}[同构与自同构]
+	\hfill\par
+	设$(A,\circ),(\bar{A},\bar{\circ})$是两个代数系统，$\phi:A\rightarrow \bar{A}$是两个系统间的一个映射。如果$\phi$既是双射又是同态映射，则称$\phi$是从$A$到$\bar{A}$的同构映射。
+
+	若$A$,$\bar{A}$之间存在同构映射，则称$A$与$\bar{A}$同构，记为$A\cong \bar{A}$。
+	特别地，当$\bar{A}=A,\bar{\circ}=\circ$的时候，我们也称同构映射$\phi:A\rightarrow A$为A上的自同构。
+\end{definition}
+
+\begin{example}
+	设$A=\{1,2,3\},\bar{A}=\{4,5,6\}$，下面分别是这两个集合上定义的二元运算:
+
+
+
+	\begin{center}
+		\begin{tabular}{c|ccc}
+
+			$\circ$ & 1 & 2 & 3 \\\cline{1-4}
+			1       & 3 & 3 & 3 \\
+			2       & 3 & 3 & 3 \\
+			3       & 3 & 3 & 3
+		\end{tabular}
+		\quad
+		\begin{tabular}{c|ccc}
+
+			$\bar{\circ}$ & 4 & 5 & 6 \\\cline{1-4}
+			4             & 6 & 6 & 6 \\
+			5             & 6 & 6 & 6 \\
+			6             & 6 & 6 & 6
+		\end{tabular}
+	\end{center}
+
+	则$A\cong\bar{A}$
+\end{example}
+\begin{proof}
+	\textcolor{Salmon}{我们需要找到一个同构映射。设$\phi(1)=4,\phi(2)=5,\phi(3)=6,$则$\phi$是$A$到$\bar{A}$的双射。然后需要证明同态:$\forall a,b\in A$，$\phi(a\circ b)=6,\phi(a)\bar{\circ}\phi(b)=6$,这说明$\phi$还是A到$\bar{A}$的同态映射，还是同构映射。所以$A\cong\bar{A}$}
+\end{proof}
+
+\begin{example}
+	设$A=\{0,1,2,3\},B=\{1,i,-1,-i\},C=$\{立，左，后，右\}，下面分别是这三个集合上定义的二元运算:
+	\begin{center}
+		\begin{tabular}{c|cccc}
+
+			$\circ$ & 0 & 1 & 2 & 3 \\\cline{1-5}
+			0       & 0 & 1 & 2 & 3 \\
+			1       & 1 & 2 & 3 & 0 \\
+			2       & 2 & 3 & 0 & 1 \\
+			3       & 3 & 0 & 1 & 2
+		\end{tabular}
+		\quad
+		\begin{tabular}{c|cccc}
+
+			$\bar{\circ}$ & 1  & i  & -1 & -i \\\cline{1-5}
+			1             & 1  & i  & -1 & -i \\
+			i             & i  & -1 & -i & 1  \\
+			-1            & -1 & -i & 1  & i  \\
+			-i            & -i & 1  & i  & -1
+		\end{tabular}
+		\quad
+		\begin{tabular}{c|cccc}
+
+			$\bar{\bar{\circ}}$ & 立 & 左 & 后 & 右 \\\cline{1-5}
+			立                  & 立 & 左 & 后 & 右 \\
+			左                  & 左 & 后 & 右 & 立 \\
+			后                  & 后 & 右 & 立 & 左 \\
+			右                  & 右 & 立 & 左 & 后
+		\end{tabular}
+	\end{center}
+
+	则$A\cong B,A\cong C$
+\end{example}
+
+\begin{proof}
+	首先证明第一项内容，我们先找双射符合条件的内容:
+
+	$\phi(0)=1,\phi(1)=i,\phi(2)=-1,\phi(3)=-i$即符合，由于无法获取解析式，观察要验证的表达式:$\phi(a\circ b)=\phi(a)\bar{\circ}\phi(b)$,对应表格的内容，就是我们需要验证每一个表格对应的位置中，第一个表格通过$\phi$映射是否为第二个表格的内容，经过逐一验证符合，所以$A\cong B$。
+
+	同理可证$A\cong C$
+\end{proof}
+
+\begin{theorem}
+	同构具有下面的性质:
+
+	1. $A\cong A$
+	2. 若$A\cong \bar{A}$,则$\bar{A}\cong A$
+	3. 若$A\cong\bar{A},\bar{A}\cong\bar{\bar{A}}$,则$\bar{A}\cong\bar{\bar{A}}$
+\end{theorem}
 \chapter{In-text Element Examples}
 
 
@@ -682,8 +868,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                                                 & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                                                                                                                                                                                                                                                                                                & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}
