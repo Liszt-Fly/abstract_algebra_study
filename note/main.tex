@@ -692,9 +692,132 @@
 	同构具有下面的性质:
 
 	1. $A\cong A$
+
 	2. 若$A\cong \bar{A}$,则$\bar{A}\cong A$
+
 	3. 若$A\cong\bar{A},\bar{A}\cong\bar{\bar{A}}$,则$\bar{A}\cong\bar{\bar{A}}$
 \end{theorem}
+
+\begin{proof}
+	1. $id_A:A\rightarrow A$是一一映射，并且$id_A(a\circ b)=a\circ b=id_A(a)\circ id_A(b)$,所以$id_A$是A上的同构映射。\\
+
+	2. 因为$A\cong\bar{A}$，所以存在同构映射$\phi:A\rightarrow \bar{A}$,则其逆映射$\phi^{-1}:\bar{A}\rightarrow A$是一一映射。$\forall a,b\in \bar{A},\exists\phi^{-1}(a),\phi^{-1}(b)\in A $,$\phi^{-1}(a\circ b)=\phi^{-1}(\phi(a)\bar{\circ
+		}\phi(b))=\phi^{-1}(\phi(a\circ b))=a\circ b=\phi^{-1}(\bar{a}\circ\phi^{-1}\bar{b})$
+\end{proof}
+
+\begin{theorem}
+	设$(A,\circ),(\bar{A},\bar{\circ})$是两个代数系统，如果$A\cong\bar{A}$,那么
+
+	1. $\circ$适合交换律当且仅当$\bar{\circ}$也适合交换律。
+
+	2.$\circ$适合结合律当且仅当$\bar{\circ}$也适合结合律。
+
+	3.$\circ$适合左（右）消去律当且仅当$\bar{\circ}$也适合左(右)消去律。
+\end{theorem}
+
+\begin{proof}
+	1.$a\circ b=b\circ a\Longleftrightarrow\phi(a\circ b)=\phi(b\circ a)\Longleftrightarrow\phi(a)\bar{\circ}\phi(b)=\phi(b)\bar{\circ}\phi(a)$
+
+	2.$(a\circ b)\circ c=a\circ(b\circ c)\Longleftrightarrow \phi((a\circ b)\circ c)=\phi(a\circ(b\circ c))\Longleftrightarrow\phi(a\circ b)\bar{\phi(c)}=\phi(a)\bar{\circ}\phi(b\circ c)\Longleftrightarrow(\phi(a)\bar{\circ}\phi(b))\bar{\circ}\phi(c)=\phi(a)\bar{\circ}(\phi(b)\bar{\circ}\phi(c))$
+	3.只证明右消去律
+	\begin{itemize}
+		\item 设$\circ$适合右消去律，往证$\bar{\circ}$也适合消去律。已知$a\circ c=b\circ c\Rightarrow a=b$,这样$\phi(a)\bar{\circ}\phi(c)=\phi(b)\bar{\circ}\phi(c)=\phi(b\circ c)\Rightarrow a\circ c=b\circ c\Rightarrow a=b\Rightarrow\phi(a)=\phi(b)$
+		\item 设$\bar{\circ}$适合右消去律，往证$\circ$也适合消去律。已知$\phi(a)\bar{\circ}\phi(c)=\phi(b)\bar{\circ}\Rightarrow\phi(a)=\phi(b)$，这样$a\circ c=b\circ c\Rightarrow \phi(a\circ c)=\phi(b\circ c)\Rightarrow \phi(a)\phi(c)=\phi(b)\phi(c)\Rightarrow \phi(a)=\phi(b)\Rightarrow a=b$
+	\end{itemize}
+\end{proof}
+
+类似地，我们可以得到下面的结论
+\begin{theorem}
+	设$(A,\oplus,\odot),(\bar{A},\bar{\oplus},\bar{\odot})$是两个代数系统，如果$A\cong \bar{A}$,那么$\odot,\oplus$适合左右分配律，当且仅当$\bar{\odot},\bar{\oplus}$也适合左右分配律。
+\end{theorem}
+\begin{theorem}{推论}
+	设$(A,\circ),(\bar{A},\bar{\circ})$是两个代数系统，如果$\circ$适合某种运算律P,而$\bar{\circ}$却不适合运算律P,那么A与$\bar{A}$不同构。
+\end{theorem}
+
+\begin{example}
+	设$A=\mathbb{Q},$A的代数运算是普通加法。$\bar{A}$=\{所有非零有理数\};$\bar{A}$的乘法是普通乘法，证明$A\not\cong \bar{A}$
+
+	本例使用反证法:
+	假设$A\cong\bar{A}$，则存在同构映射$\phi:A\rightarrow\bar{A}$,设-1的原像是a,则$\phi(a)=-1$,从而$\phi^{2}(\frac{a}{2})=\phi(\frac{a}{2}+\frac{a}{2})=\phi(a)=-1$
+\end{example}
+\section{等价关系与集合的分类}
+\begin{definition}
+	设A是一个集合，D=\{对,错\}，则称映射$R:A\times A\rightarrow D$为集合A上的一个关系。当R(a,b)=对的时候，称a与b有关系R，记为aRb;当R(a,b)=错的时候，称a与b没有关系R
+\end{definition}
+\begin{example}
+	设A=\{1,2\},则$A\times A=\{(1,1),(1,2),(2,1),(2,2)\}$.我们定义:
+
+	$R_1(1,1)=R_1(1,2)=R_1(2,1)=$对,$R_1(2,2)=$错;
+
+	$R_2(1,1)=R_2(1,2)=$对,$R_2(2,1)=R_2(2,2)=$错;
+
+	$R_3(a,b)=$对；$R_4(a,b)=$错；
+
+	则$R_1,R_2,R_3,R_4$都是A上的关系
+\end{example}
+
+\begin{definition}
+	设A是一个非空集合，我们把$A\times A$的一个子集$\bar{R}$称为A上的一个关系。对于任意的$(a,b)\in A\times A$，当$(a,b)\in\bar{R}$的时候，称a与b有关系$\bar{R}$,记录为$a\bar{R}b$;当$(a,b)\not\in\bar{R}$的时候，称a与b没有关系$\bar{R}$
+\end{definition}
+
+\begin{example}
+	设A=\{1,2\},则
+
+	$A\times A=\{(1,1),(1,2),(2,1),(2,2)\}$,我们定义:
+
+	$R_1=\{(1,1),(1,2),(2,1)\}$;
+
+	$R_2=\{(1,1),(1,2)\}$;
+
+	$R_3=\{(1,1),(1,2),(2,1),(2,2)\}$;
+
+	$R_4(a,b)=\emptyset$
+
+	则$R_1,R_2,R_3,R_4$都是A上的关系
+\end{example}
+
+\begin{theorem}
+	关系的两个定义等价
+\end{theorem}
+
+\begin{proof}
+	设A是一个非空集合,D=\{对，错\}
+
+	$\Rightarrow $已知R:$A\times A\rightarrow D$是集合A上的一个关系，
+
+	令$\bar{R}=R^{-1}$(\{对\}),则$\bar{R}$是$A\times A$的一个子集，它是第二个定义描述的一个关系
+
+	$\Leftarrow$已知$\bar{R}\subset A\times A$第二个定义描述的一个关系
+
+	映射R:$A\times A\rightarrow D$定义为:
+
+	如果$(a,b)\in\bar{R}$,那么R(a,b)=对
+
+	如果$(a,b)\not\in\bar{R}$,那么R(a,b)=错
+
+	这样$R:A\times A\rightarrow D$是一个关系
+
+\end{proof}
+
+\begin{remark}
+	我们思考一下，集合A=\{1,2\}上的关系共有多少个？
+	那么更一般地呢？集合A=\{1,2,3,4,....n\}上的关系有多少个？
+
+	\textcolor{Salmon}{集合$A\times A$的元素个数有$4$个,子集个数为$2^4=16$个。更一般的情况来说，由于数组无序，使用C来排列$2^{C_{n}^1\times C_{n}^1}=2^{n^2}$}
+\end{remark}
+
+\begin{definition}
+	设\~是集合A上的一个关系，如果~还满足:
+	\begin{itemize}
+		\item 自反性: a\~a; (反射律)
+		\item 对称性: 若a\~b,则b\~a;（对称律)
+		\item 传递性:若a\~b,b\~c,则a\~c（推移律)
+	\end{itemize}
+	则称\~为A上的一个等价关系，若a\~b,则称a与b等价
+\end{definition}
+\begin{remark}
+	数之间的"等于"关系是一个等价关系。而代数系统之间的同构关系也是一个等价关系。
+\end{remark}
 \chapter{In-text Element Examples}
 
 
@@ -868,8 +991,8 @@ This is an example of a remark.
 \begin{example} % Specify a name/title in square brackets, or leave them out for no title
 	Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
 	\begin{equation}
-		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
+		f(x)=\left\{\begin{aligned}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      & \mathrm{e}^{|x|} &  & \text{si $|x-x^0|\leq 1/2$} \\
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     & 0                &  & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 	\end{equation}
 	The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\mathopen{]}0\,;5/2-\sqrt{2}\mathclose{[}$.
 \end{example}
